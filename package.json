@@ -22,8 +22,16 @@
   },
   "cds": {
     "requires": {
-      "auth": "xsuaa",
-      "db": "hana"
+      "db": "hana",
+      "auth": {
+        "kind": "mocked",
+        "users": {
+         "jay":{
+          "password": "welome@123",
+          "roles": [ "admin" ]
+         }
+        }
+      }
     }
   }
 }
